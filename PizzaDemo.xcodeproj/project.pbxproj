@@ -1,0 +1,723 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4E328C6C86E4B96983843B09 /* Pods_PizzaDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C40AB4EC00D50D516E66666 /* Pods_PizzaDemo.framework */; };
+		9A88B63721DCA9DB0002763C /* BusinessLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A88B63621DCA9DB0002763C /* BusinessLogic.swift */; };
+		9A88B63A21DCAA020002763C /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A88B63921DCAA020002763C /* MapViewController.swift */; };
+		9A88B63C21DCAA0A0002763C /* MapInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A88B63B21DCAA0A0002763C /* MapInteractor.swift */; };
+		9A88B63E21DCAA490002763C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A88B63D21DCAA490002763C /* Main.storyboard */; };
+		9A88B64321DCAAA00002763C /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A88B64121DCAAA00002763C /* ImageCollectionViewCell.swift */; };
+		9A88B64421DCAAA00002763C /* ImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A88B64221DCAAA00002763C /* ImageCell.xib */; };
+		9A88B64721DCAAE60002763C /* PlaceDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A88B64521DCAAE60002763C /* PlaceDetailsViewController.swift */; };
+		9A88B64821DCAAE60002763C /* PlaceDetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A88B64621DCAAE60002763C /* PlaceDetailsInteractor.swift */; };
+		9A88B64E21DCAB1A0002763C /* PizzaPlaceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A88B64C21DCAB1A0002763C /* PizzaPlaceViewModel.swift */; };
+		9A88B64F21DCAB1A0002763C /* PizzaFriendViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A88B64D21DCAB1A0002763C /* PizzaFriendViewModel.swift */; };
+		9A88B66D21DCAB340002763C /* PizzaMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A88B65121DCAB330002763C /* PizzaMarker.swift */; };
+		9A88B66F21DCAB340002763C /* Roundable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A88B65421DCAB330002763C /* Roundable.swift */; };
+		9A88B67021DCAB340002763C /* PManager+friends.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A88B65621DCAB340002763C /* PManager+friends.swift */; };
+		9A88B67121DCAB340002763C /* PizzaManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A88B65721DCAB340002763C /* PizzaManager.swift */; };
+		9A88B67221DCAB340002763C /* PizzaMeta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A88B65921DCAB340002763C /* PizzaMeta.swift */; };
+		9A88B67321DCAB340002763C /* PizzaPlacesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A88B65A21DCAB340002763C /* PizzaPlacesResponse.swift */; };
+		9A88B67421DCAB340002763C /* PizzaFriend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A88B65B21DCAB340002763C /* PizzaFriend.swift */; };
+		9A88B67521DCAB340002763C /* PizzaImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A88B65C21DCAB340002763C /* PizzaImage.swift */; };
+		9A88B67621DCAB340002763C /* PizzaPlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A88B65D21DCAB340002763C /* PizzaPlace.swift */; };
+		9A88B67721DCAB340002763C /* PizzaList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A88B65E21DCAB340002763C /* PizzaList.swift */; };
+		9A88B67821DCAB340002763C /* PizzaService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A88B65F21DCAB340002763C /* PizzaService.swift */; };
+		9A88B67921DCAB340002763C /* PManager+pizzaPlaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A88B66021DCAB340002763C /* PManager+pizzaPlaces.swift */; };
+		9A88B67A21DCAB340002763C /* AnimationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A88B66321DCAB340002763C /* AnimationPresenter.swift */; };
+		9A88B67B21DCAB340002763C /* AlertPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A88B66421DCAB340002763C /* AlertPresenter.swift */; };
+		9A88B67C21DCAB340002763C /* LocalDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A88B66621DCAB340002763C /* LocalDB.swift */; };
+		9A88B67D21DCAB340002763C /* PizzaFriendRLM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A88B66821DCAB340002763C /* PizzaFriendRLM.swift */; };
+		9A88B67E21DCAB340002763C /* PizzaPlaceRLM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A88B66921DCAB340002763C /* PizzaPlaceRLM.swift */; };
+		9A88B67F21DCAB340002763C /* PizzaPlacesProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A88B66A21DCAB340002763C /* PizzaPlacesProtocol.swift */; };
+		9A88B68021DCAB340002763C /* StarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A88B66C21DCAB340002763C /* StarView.swift */; };
+		9A88B68A21DCAD190002763C /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A88B68221DCAD190002763C /* UILabel+Extension.swift */; };
+		9A88B68B21DCAD190002763C /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A88B68321DCAD190002763C /* UIButton+Extension.swift */; };
+		9A88B68C21DCAD190002763C /* BusinessLogic+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A88B68421DCAD190002763C /* BusinessLogic+Extension.swift */; };
+		9A88B68D21DCAD190002763C /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A88B68521DCAD190002763C /* UIView+Extension.swift */; };
+		9A88B68E21DCAD190002763C /* Results+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A88B68621DCAD190002763C /* Results+Extension.swift */; };
+		9A88B68F21DCAD190002763C /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A88B68721DCAD190002763C /* UIViewController+Extension.swift */; };
+		9A88B69021DCAD190002763C /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A88B68821DCAD190002763C /* String+Extension.swift */; };
+		9A88B69121DCAD190002763C /* List+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A88B68921DCAD190002763C /* List+Extension.swift */; };
+		9A93F7E821DCA7A6007F14DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A93F7E721DCA7A6007F14DA /* AppDelegate.swift */; };
+		9A93F7EF21DCA7A7007F14DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A93F7EE21DCA7A7007F14DA /* Assets.xcassets */; };
+		9A93F7F221DCA7A7007F14DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A93F7F021DCA7A7007F14DA /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6C40AB4EC00D50D516E66666 /* Pods_PizzaDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PizzaDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E9D6990B647094512A597EF /* Pods-PizzaDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PizzaDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PizzaDemo/Pods-PizzaDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		9A88B63621DCA9DB0002763C /* BusinessLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessLogic.swift; sourceTree = "<group>"; };
+		9A88B63921DCAA020002763C /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		9A88B63B21DCAA0A0002763C /* MapInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapInteractor.swift; sourceTree = "<group>"; };
+		9A88B63D21DCAA490002763C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		9A88B64121DCAAA00002763C /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		9A88B64221DCAAA00002763C /* ImageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageCell.xib; sourceTree = "<group>"; };
+		9A88B64521DCAAE60002763C /* PlaceDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceDetailsViewController.swift; sourceTree = "<group>"; };
+		9A88B64621DCAAE60002763C /* PlaceDetailsInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceDetailsInteractor.swift; sourceTree = "<group>"; };
+		9A88B64C21DCAB1A0002763C /* PizzaPlaceViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PizzaPlaceViewModel.swift; sourceTree = "<group>"; };
+		9A88B64D21DCAB1A0002763C /* PizzaFriendViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PizzaFriendViewModel.swift; sourceTree = "<group>"; };
+		9A88B65121DCAB330002763C /* PizzaMarker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PizzaMarker.swift; sourceTree = "<group>"; };
+		9A88B65421DCAB330002763C /* Roundable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Roundable.swift; sourceTree = "<group>"; };
+		9A88B65621DCAB340002763C /* PManager+friends.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PManager+friends.swift"; sourceTree = "<group>"; };
+		9A88B65721DCAB340002763C /* PizzaManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PizzaManager.swift; sourceTree = "<group>"; };
+		9A88B65921DCAB340002763C /* PizzaMeta.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PizzaMeta.swift; sourceTree = "<group>"; };
+		9A88B65A21DCAB340002763C /* PizzaPlacesResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PizzaPlacesResponse.swift; sourceTree = "<group>"; };
+		9A88B65B21DCAB340002763C /* PizzaFriend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PizzaFriend.swift; sourceTree = "<group>"; };
+		9A88B65C21DCAB340002763C /* PizzaImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PizzaImage.swift; sourceTree = "<group>"; };
+		9A88B65D21DCAB340002763C /* PizzaPlace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PizzaPlace.swift; sourceTree = "<group>"; };
+		9A88B65E21DCAB340002763C /* PizzaList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PizzaList.swift; sourceTree = "<group>"; };
+		9A88B65F21DCAB340002763C /* PizzaService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PizzaService.swift; sourceTree = "<group>"; };
+		9A88B66021DCAB340002763C /* PManager+pizzaPlaces.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PManager+pizzaPlaces.swift"; sourceTree = "<group>"; };
+		9A88B66321DCAB340002763C /* AnimationPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationPresenter.swift; sourceTree = "<group>"; };
+		9A88B66421DCAB340002763C /* AlertPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertPresenter.swift; sourceTree = "<group>"; };
+		9A88B66621DCAB340002763C /* LocalDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalDB.swift; sourceTree = "<group>"; };
+		9A88B66821DCAB340002763C /* PizzaFriendRLM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PizzaFriendRLM.swift; sourceTree = "<group>"; };
+		9A88B66921DCAB340002763C /* PizzaPlaceRLM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PizzaPlaceRLM.swift; sourceTree = "<group>"; };
+		9A88B66A21DCAB340002763C /* PizzaPlacesProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PizzaPlacesProtocol.swift; sourceTree = "<group>"; };
+		9A88B66C21DCAB340002763C /* StarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarView.swift; sourceTree = "<group>"; };
+		9A88B68221DCAD190002763C /* UILabel+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
+		9A88B68321DCAD190002763C /* UIButton+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
+		9A88B68421DCAD190002763C /* BusinessLogic+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BusinessLogic+Extension.swift"; sourceTree = "<group>"; };
+		9A88B68521DCAD190002763C /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		9A88B68621DCAD190002763C /* Results+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Results+Extension.swift"; sourceTree = "<group>"; };
+		9A88B68721DCAD190002763C /* UIViewController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		9A88B68821DCAD190002763C /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		9A88B68921DCAD190002763C /* List+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "List+Extension.swift"; sourceTree = "<group>"; };
+		9A93F7E421DCA7A6007F14DA /* PizzaDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PizzaDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A93F7E721DCA7A6007F14DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9A93F7EE21DCA7A7007F14DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9A93F7F121DCA7A7007F14DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9A93F7F321DCA7A7007F14DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB9A7C24423A6855A49A4129 /* Pods-PizzaDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PizzaDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-PizzaDemo/Pods-PizzaDemo.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9A93F7E121DCA7A6007F14DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E328C6C86E4B96983843B09 /* Pods_PizzaDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0869AF65E506D9B92BB8636A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6E9D6990B647094512A597EF /* Pods-PizzaDemo.debug.xcconfig */,
+				CB9A7C24423A6855A49A4129 /* Pods-PizzaDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9A88B62D21DCA8FA0002763C /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				9A88B63D21DCAA490002763C /* Main.storyboard */,
+				9A88B64B21DCAB1A0002763C /* ViewModels */,
+				9A88B63521DCA9B00002763C /* Business Logic */,
+				9A88B63821DCA9EB0002763C /* Map */,
+				9A88B63F21DCAA7F0002763C /* Place Details */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		9A88B63521DCA9B00002763C /* Business Logic */ = {
+			isa = PBXGroup;
+			children = (
+				9A88B63621DCA9DB0002763C /* BusinessLogic.swift */,
+			);
+			path = "Business Logic";
+			sourceTree = "<group>";
+		};
+		9A88B63821DCA9EB0002763C /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				9A88B63921DCAA020002763C /* MapViewController.swift */,
+				9A88B63B21DCAA0A0002763C /* MapInteractor.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		9A88B63F21DCAA7F0002763C /* Place Details */ = {
+			isa = PBXGroup;
+			children = (
+				9A88B64621DCAAE60002763C /* PlaceDetailsInteractor.swift */,
+				9A88B64521DCAAE60002763C /* PlaceDetailsViewController.swift */,
+				9A88B64021DCAA870002763C /* Image Cell */,
+			);
+			path = "Place Details";
+			sourceTree = "<group>";
+		};
+		9A88B64021DCAA870002763C /* Image Cell */ = {
+			isa = PBXGroup;
+			children = (
+				9A88B64221DCAAA00002763C /* ImageCell.xib */,
+				9A88B64121DCAAA00002763C /* ImageCollectionViewCell.swift */,
+			);
+			path = "Image Cell";
+			sourceTree = "<group>";
+		};
+		9A88B64B21DCAB1A0002763C /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				9A88B64C21DCAB1A0002763C /* PizzaPlaceViewModel.swift */,
+				9A88B64D21DCAB1A0002763C /* PizzaFriendViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		9A88B65021DCAB330002763C /* Pizza Marker */ = {
+			isa = PBXGroup;
+			children = (
+				9A88B65121DCAB330002763C /* PizzaMarker.swift */,
+			);
+			path = "Pizza Marker";
+			sourceTree = "<group>";
+		};
+		9A88B65221DCAB330002763C /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				9A88B65421DCAB330002763C /* Roundable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		9A88B65521DCAB340002763C /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				9A88B65821DCAB340002763C /* Model */,
+				9A88B65621DCAB340002763C /* PManager+friends.swift */,
+				9A88B65721DCAB340002763C /* PizzaManager.swift */,
+				9A88B65F21DCAB340002763C /* PizzaService.swift */,
+				9A88B66021DCAB340002763C /* PManager+pizzaPlaces.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		9A88B65821DCAB340002763C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9A88B65921DCAB340002763C /* PizzaMeta.swift */,
+				9A88B65A21DCAB340002763C /* PizzaPlacesResponse.swift */,
+				9A88B65B21DCAB340002763C /* PizzaFriend.swift */,
+				9A88B65C21DCAB340002763C /* PizzaImage.swift */,
+				9A88B65D21DCAB340002763C /* PizzaPlace.swift */,
+				9A88B65E21DCAB340002763C /* PizzaList.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9A88B66121DCAB340002763C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				9A88B66221DCAB340002763C /* Presenter */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		9A88B66221DCAB340002763C /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				9A88B66321DCAB340002763C /* AnimationPresenter.swift */,
+				9A88B66421DCAB340002763C /* AlertPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		9A88B66521DCAB340002763C /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				9A88B66721DCAB340002763C /* Model */,
+				9A88B66621DCAB340002763C /* LocalDB.swift */,
+				9A88B66A21DCAB340002763C /* PizzaPlacesProtocol.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		9A88B66721DCAB340002763C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9A88B66821DCAB340002763C /* PizzaFriendRLM.swift */,
+				9A88B66921DCAB340002763C /* PizzaPlaceRLM.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9A88B66B21DCAB340002763C /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				9A88B66C21DCAB340002763C /* StarView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		9A88B68121DCAD190002763C /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				9A88B68221DCAD190002763C /* UILabel+Extension.swift */,
+				9A88B68321DCAD190002763C /* UIButton+Extension.swift */,
+				9A88B68421DCAD190002763C /* BusinessLogic+Extension.swift */,
+				9A88B68521DCAD190002763C /* UIView+Extension.swift */,
+				9A88B68621DCAD190002763C /* Results+Extension.swift */,
+				9A88B68721DCAD190002763C /* UIViewController+Extension.swift */,
+				9A88B68821DCAD190002763C /* String+Extension.swift */,
+				9A88B68921DCAD190002763C /* List+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		9A93F7DB21DCA7A6007F14DA = {
+			isa = PBXGroup;
+			children = (
+				9A93F7E621DCA7A6007F14DA /* PizzaDemo */,
+				9A93F7E521DCA7A6007F14DA /* Products */,
+				0869AF65E506D9B92BB8636A /* Pods */,
+				DE91967EFBC48226A4B11429 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9A93F7E521DCA7A6007F14DA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9A93F7E421DCA7A6007F14DA /* PizzaDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9A93F7E621DCA7A6007F14DA /* PizzaDemo */ = {
+			isa = PBXGroup;
+			children = (
+				9A88B62D21DCA8FA0002763C /* Scenes */,
+				9A88B65021DCAB330002763C /* Pizza Marker */,
+				9A88B65521DCAB340002763C /* Network */,
+				9A88B66521DCAB340002763C /* Storage */,
+				9A88B66B21DCAB340002763C /* Components */,
+				9A88B65221DCAB330002763C /* Protocols */,
+				9A88B68121DCAD190002763C /* Extension */,
+				9A88B66121DCAB340002763C /* Utils */,
+				9A93F7E721DCA7A6007F14DA /* AppDelegate.swift */,
+				9A93F7EE21DCA7A7007F14DA /* Assets.xcassets */,
+				9A93F7F021DCA7A7007F14DA /* LaunchScreen.storyboard */,
+				9A93F7F321DCA7A7007F14DA /* Info.plist */,
+			);
+			path = PizzaDemo;
+			sourceTree = "<group>";
+		};
+		DE91967EFBC48226A4B11429 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6C40AB4EC00D50D516E66666 /* Pods_PizzaDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9A93F7E321DCA7A6007F14DA /* PizzaDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A93F7F621DCA7A7007F14DA /* Build configuration list for PBXNativeTarget "PizzaDemo" */;
+			buildPhases = (
+				061960E7C9FED52956565079 /* [CP] Check Pods Manifest.lock */,
+				9A93F7E021DCA7A6007F14DA /* Sources */,
+				9A93F7E121DCA7A6007F14DA /* Frameworks */,
+				9A93F7E221DCA7A6007F14DA /* Resources */,
+				3DA8D065ADE3EA2785AAEB1A /* [CP] Embed Pods Frameworks */,
+				518DFA5B249FC3B963BC4BA4 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PizzaDemo;
+			productName = PizzaDemo;
+			productReference = 9A93F7E421DCA7A6007F14DA /* PizzaDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9A93F7DC21DCA7A6007F14DA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Pietro Gandolfi";
+				TargetAttributes = {
+					9A93F7E321DCA7A6007F14DA = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 9A93F7DF21DCA7A6007F14DA /* Build configuration list for PBXProject "PizzaDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9A93F7DB21DCA7A6007F14DA;
+			productRefGroup = 9A93F7E521DCA7A6007F14DA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9A93F7E321DCA7A6007F14DA /* PizzaDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9A93F7E221DCA7A6007F14DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A93F7F221DCA7A7007F14DA /* LaunchScreen.storyboard in Resources */,
+				9A88B64421DCAAA00002763C /* ImageCell.xib in Resources */,
+				9A93F7EF21DCA7A7007F14DA /* Assets.xcassets in Resources */,
+				9A88B63E21DCAA490002763C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		061960E7C9FED52956565079 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PizzaDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3DA8D065ADE3EA2785AAEB1A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PizzaDemo/Pods-PizzaDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxExtension/RxExtension.framework",
+				"${BUILT_PRODUCTS_DIR}/RxOptional/RxOptional.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxExtension.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxOptional.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PizzaDemo/Pods-PizzaDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		518DFA5B249FC3B963BC4BA4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PizzaDemo/Pods-PizzaDemo-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PizzaDemo/Pods-PizzaDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9A93F7E021DCA7A6007F14DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A88B68D21DCAD190002763C /* UIView+Extension.swift in Sources */,
+				9A88B68B21DCAD190002763C /* UIButton+Extension.swift in Sources */,
+				9A88B67721DCAB340002763C /* PizzaList.swift in Sources */,
+				9A88B67521DCAB340002763C /* PizzaImage.swift in Sources */,
+				9A88B68A21DCAD190002763C /* UILabel+Extension.swift in Sources */,
+				9A88B67D21DCAB340002763C /* PizzaFriendRLM.swift in Sources */,
+				9A88B67021DCAB340002763C /* PManager+friends.swift in Sources */,
+				9A88B67E21DCAB340002763C /* PizzaPlaceRLM.swift in Sources */,
+				9A88B66D21DCAB340002763C /* PizzaMarker.swift in Sources */,
+				9A88B64721DCAAE60002763C /* PlaceDetailsViewController.swift in Sources */,
+				9A88B63721DCA9DB0002763C /* BusinessLogic.swift in Sources */,
+				9A88B68021DCAB340002763C /* StarView.swift in Sources */,
+				9A88B67621DCAB340002763C /* PizzaPlace.swift in Sources */,
+				9A88B67821DCAB340002763C /* PizzaService.swift in Sources */,
+				9A88B64321DCAAA00002763C /* ImageCollectionViewCell.swift in Sources */,
+				9A88B64F21DCAB1A0002763C /* PizzaFriendViewModel.swift in Sources */,
+				9A88B64E21DCAB1A0002763C /* PizzaPlaceViewModel.swift in Sources */,
+				9A88B67921DCAB340002763C /* PManager+pizzaPlaces.swift in Sources */,
+				9A88B68F21DCAD190002763C /* UIViewController+Extension.swift in Sources */,
+				9A88B66F21DCAB340002763C /* Roundable.swift in Sources */,
+				9A88B67121DCAB340002763C /* PizzaManager.swift in Sources */,
+				9A88B67321DCAB340002763C /* PizzaPlacesResponse.swift in Sources */,
+				9A88B67C21DCAB340002763C /* LocalDB.swift in Sources */,
+				9A88B68E21DCAD190002763C /* Results+Extension.swift in Sources */,
+				9A88B67421DCAB340002763C /* PizzaFriend.swift in Sources */,
+				9A88B63A21DCAA020002763C /* MapViewController.swift in Sources */,
+				9A88B67F21DCAB340002763C /* PizzaPlacesProtocol.swift in Sources */,
+				9A88B67221DCAB340002763C /* PizzaMeta.swift in Sources */,
+				9A88B69021DCAD190002763C /* String+Extension.swift in Sources */,
+				9A88B67A21DCAB340002763C /* AnimationPresenter.swift in Sources */,
+				9A88B68C21DCAD190002763C /* BusinessLogic+Extension.swift in Sources */,
+				9A93F7E821DCA7A6007F14DA /* AppDelegate.swift in Sources */,
+				9A88B64821DCAAE60002763C /* PlaceDetailsInteractor.swift in Sources */,
+				9A88B69121DCAD190002763C /* List+Extension.swift in Sources */,
+				9A88B63C21DCAA0A0002763C /* MapInteractor.swift in Sources */,
+				9A88B67B21DCAB340002763C /* AlertPresenter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9A93F7F021DCA7A7007F14DA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9A93F7F121DCA7A7007F14DA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9A93F7F421DCA7A7007F14DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9A93F7F521DCA7A7007F14DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9A93F7F721DCA7A7007F14DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E9D6990B647094512A597EF /* Pods-PizzaDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S552G94572;
+				INFOPLIST_FILE = PizzaDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ganjalf.PizzaDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9A93F7F821DCA7A7007F14DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB9A7C24423A6855A49A4129 /* Pods-PizzaDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S552G94572;
+				INFOPLIST_FILE = PizzaDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ganjalf.PizzaDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9A93F7DF21DCA7A6007F14DA /* Build configuration list for PBXProject "PizzaDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A93F7F421DCA7A7007F14DA /* Debug */,
+				9A93F7F521DCA7A7007F14DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A93F7F621DCA7A7007F14DA /* Build configuration list for PBXNativeTarget "PizzaDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A93F7F721DCA7A7007F14DA /* Debug */,
+				9A93F7F821DCA7A7007F14DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9A93F7DC21DCA7A6007F14DA /* Project object */;
+}
