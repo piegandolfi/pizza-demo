@@ -15,7 +15,7 @@ import RealmSwift
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    static let googleAPIKey = "PAST_HERE_GOOGLE_MAPS_API_KEY"
+    static let googleAPIKey = "AIzaSyA7xNHdRKdJDRWsPcl_nfzn30Iu3EblsdE"
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
