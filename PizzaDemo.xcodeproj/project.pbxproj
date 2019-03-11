@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C0C04A5A6A6D81257F93B6A /* Pods_PizzaDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EAA713D4266FD480A6FE84F /* Pods_PizzaDemoTests.framework */; };
 		4E328C6C86E4B96983843B09 /* Pods_PizzaDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C40AB4EC00D50D516E66666 /* Pods_PizzaDemo.framework */; };
 		9A88B63721DCA9DB0002763C /* BusinessLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A88B63621DCA9DB0002763C /* BusinessLogic.swift */; };
 		9A88B63A21DCAA020002763C /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A88B63921DCAA020002763C /* MapViewController.swift */; };
@@ -62,8 +63,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		17A5A6EB22B731A9B9B67F0A /* Pods-PizzaDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PizzaDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PizzaDemoTests/Pods-PizzaDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		61629D90A17909AE9B5F8F05 /* Pods-PizzaDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PizzaDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PizzaDemoTests/Pods-PizzaDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6C40AB4EC00D50D516E66666 /* Pods_PizzaDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PizzaDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E9D6990B647094512A597EF /* Pods-PizzaDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PizzaDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PizzaDemo/Pods-PizzaDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		7EAA713D4266FD480A6FE84F /* Pods_PizzaDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PizzaDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A257A2F21DD530500B7DCAA /* PizzaDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PizzaDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A257A3321DD530500B7DCAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A88B63621DCA9DB0002763C /* BusinessLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessLogic.swift; sourceTree = "<group>"; };
@@ -117,6 +121,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C0C04A5A6A6D81257F93B6A /* Pods_PizzaDemoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,6 +141,8 @@
 			children = (
 				6E9D6990B647094512A597EF /* Pods-PizzaDemo.debug.xcconfig */,
 				CB9A7C24423A6855A49A4129 /* Pods-PizzaDemo.release.xcconfig */,
+				61629D90A17909AE9B5F8F05 /* Pods-PizzaDemoTests.debug.xcconfig */,
+				17A5A6EB22B731A9B9B67F0A /* Pods-PizzaDemoTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -365,6 +372,7 @@
 			isa = PBXGroup;
 			children = (
 				6C40AB4EC00D50D516E66666 /* Pods_PizzaDemo.framework */,
+				7EAA713D4266FD480A6FE84F /* Pods_PizzaDemoTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -376,6 +384,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9A257A3821DD530500B7DCAA /* Build configuration list for PBXNativeTarget "PizzaDemoTests" */;
 			buildPhases = (
+				E1F96C49C73634EF3CEE5A28 /* [CP] Check Pods Manifest.lock */,
 				9A257A2B21DD530500B7DCAA /* Sources */,
 				9A257A2C21DD530500B7DCAA /* Frameworks */,
 				9A257A2D21DD530500B7DCAA /* Resources */,
@@ -501,10 +510,9 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-PizzaDemo/Pods-PizzaDemo-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-PizzaDemo/Pods-PizzaDemo-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
-				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
@@ -512,7 +520,6 @@
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
-				"${BUILT_PRODUCTS_DIR}/RxExtension/RxExtension.framework",
 				"${BUILT_PRODUCTS_DIR}/RxOptional/RxOptional.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 			);
@@ -522,7 +529,6 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
@@ -530,13 +536,12 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxExtension.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxOptional.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PizzaDemo/Pods-PizzaDemo-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PizzaDemo/Pods-PizzaDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		518DFA5B249FC3B963BC4BA4 /* [CP] Copy Pods Resources */ = {
@@ -547,18 +552,42 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-PizzaDemo/Pods-PizzaDemo-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-PizzaDemo/Pods-PizzaDemo-resources.sh",
 				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PizzaDemo/Pods-PizzaDemo-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PizzaDemo/Pods-PizzaDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E1F96C49C73634EF3CEE5A28 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PizzaDemoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -639,6 +668,7 @@
 /* Begin XCBuildConfiguration section */
 		9A257A3621DD530500B7DCAA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61629D90A17909AE9B5F8F05 /* Pods-PizzaDemoTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
@@ -661,6 +691,7 @@
 		};
 		9A257A3721DD530500B7DCAA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17A5A6EB22B731A9B9B67F0A /* Pods-PizzaDemoTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
