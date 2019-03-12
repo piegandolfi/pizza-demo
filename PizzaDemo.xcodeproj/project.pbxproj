@@ -535,7 +535,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-PizzaDemo/Pods-PizzaDemo-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-PizzaDemo/Pods-PizzaDemo-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
@@ -566,7 +566,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PizzaDemo/Pods-PizzaDemo-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PizzaDemo/Pods-PizzaDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		518DFA5B249FC3B963BC4BA4 /* [CP] Copy Pods Resources */ = {
@@ -577,7 +577,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-PizzaDemo/Pods-PizzaDemo-resources.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-PizzaDemo/Pods-PizzaDemo-resources.sh",
 				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
 				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
 			);
@@ -590,7 +590,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PizzaDemo/Pods-PizzaDemo-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PizzaDemo/Pods-PizzaDemo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E1F96C49C73634EF3CEE5A28 /* [CP] Check Pods Manifest.lock */ = {

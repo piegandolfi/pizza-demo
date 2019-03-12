@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14460.32" systemVersion="17G5019" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <entity name="PizzaFriend" representedClassName="PizzaFriend" syncable="YES" codeGenerationType="class"/>
-    <entity name="PizzaPlace" representedClassName="PizzaPlace" syncable="YES" codeGenerationType="class"/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14460.32" systemVersion="18D109" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="PizzaFriendCD" representedClassName="PizzaFriendCD" syncable="YES" codeGenerationType="class"/>
+    <entity name="PizzaPlaceCD" representedClassName="PizzaPlaceCD" syncable="YES" codeGenerationType="class"/>
     <elements>
-        <element name="PizzaFriend" positionX="-63" positionY="-18" width="128" height="45"/>
-        <element name="PizzaPlace" positionX="-54" positionY="-9" width="128" height="45"/>
+        <element name="PizzaFriendCD" positionX="-63" positionY="-18" width="128" height="45"/>
+        <element name="PizzaPlaceCD" positionX="-54" positionY="-9" width="128" height="45"/>
     </elements>
 </model>
