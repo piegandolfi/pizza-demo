@@ -9,7 +9,7 @@
 import Foundation
 import CoreData
 
-class Task: Operation {
+class CoreDataTask: Operation {
 
     // MARK: - Properties
 
@@ -47,5 +47,5 @@ class Task: Operation {
             }
         }
     }
-    
+
 }
