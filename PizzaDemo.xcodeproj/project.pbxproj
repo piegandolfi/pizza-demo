@@ -184,7 +184,6 @@
 			children = (
 				9A88B63D21DCAA490002763C /* Main.storyboard */,
 				9A88B64B21DCAB1A0002763C /* ViewModels */,
-				9A88B63521DCA9B00002763C /* Business Logic */,
 				9A88B63821DCA9EB0002763C /* Map */,
 				9A88B63F21DCAA7F0002763C /* Place Details */,
 			);
@@ -362,6 +361,7 @@
 			isa = PBXGroup;
 			children = (
 				9A88B62D21DCA8FA0002763C /* Scenes */,
+				9A88B63521DCA9B00002763C /* Business Logic */,
 				9A88B65021DCAB330002763C /* Pizza Marker */,
 				9A88B65521DCAB340002763C /* Network */,
 				9A88B66521DCAB340002763C /* Storage */,

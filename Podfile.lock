@@ -1,0 +1,78 @@
+PODS:
+  - Alamofire (4.8.0)
+  - GoogleMaps (2.7.0):
+    - GoogleMaps/Maps (= 2.7.0)
+  - GoogleMaps/Base (2.7.0)
+  - GoogleMaps/Maps (2.7.0):
+    - GoogleMaps/Base
+  - GooglePlaces (2.7.0):
+    - GoogleMaps/Base (= 2.7.0)
+  - Kingfisher (5.0.0)
+  - Moya (12.0.1):
+    - Moya/Core (= 12.0.1)
+  - Moya/Core (12.0.1):
+    - Alamofire (~> 4.1)
+    - Result (~> 4.0)
+  - NVActivityIndicatorView (4.4.0):
+    - NVActivityIndicatorView/Presenter (= 4.4.0)
+  - NVActivityIndicatorView/Presenter (4.4.0)
+  - Realm (3.12.0):
+    - Realm/Headers (= 3.12.0)
+  - Realm/Headers (3.12.0)
+  - RealmSwift (3.12.0):
+    - Realm (= 3.12.0)
+  - Result (4.1.0)
+  - RxAtomic (4.4.0)
+  - RxCocoa (4.4.0):
+    - RxSwift (~> 4.0)
+  - RxOptional (3.6.2):
+    - RxCocoa (~> 4.0)
+    - RxSwift (~> 4.0)
+  - RxSwift (4.4.0):
+    - RxAtomic (~> 4.4)
+
+DEPENDENCIES:
+  - GoogleMaps
+  - GooglePlaces
+  - Kingfisher (~> 5.0)
+  - Moya
+  - NVActivityIndicatorView
+  - RealmSwift
+  - RxCocoa
+  - RxOptional
+  - RxSwift
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - GoogleMaps
+    - GooglePlaces
+    - Kingfisher
+    - Moya
+    - NVActivityIndicatorView
+    - Realm
+    - RealmSwift
+    - Result
+    - RxAtomic
+    - RxCocoa
+    - RxOptional
+    - RxSwift
+
+SPEC CHECKSUMS:
+  Alamofire: 3ec537f71edc9804815215393ae2b1a8ea33a844
+  GoogleMaps: f79af95cb24d869457b1f961c93d3ce8b2f3b848
+  GooglePlaces: 3d06e6c99654545b4738ce49648745779c25f2ef
+  Kingfisher: 2b0dd651e4fe5a07305b8242fde56f8e2d410f58
+  Moya: cf730b3cd9e005401ef37a85143aa141a12fd38f
+  NVActivityIndicatorView: ec7440a57af2450319d3a4181cca7da6fc127064
+  Realm: cdaef23c4ddb36ab1ddffed23f5a7f3332fc5585
+  RealmSwift: 5576324033f0aa5ef1e0a839a3da2281dff47a7f
+  Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
+  RxAtomic: eacf60db868c96bfd63320e28619fe29c179656f
+  RxCocoa: df63ebf7b9a70d6b4eeea407ed5dd4efc8979749
+  RxOptional: 80426a0ddbd092573e4c482d8cc13302078c4d5e
+  RxSwift: 5976ecd04fc2fefd648827c23de5e11157faa973
+
+PODFILE CHECKSUM: 8b22024644f54109cb885bd2f30f995d26e3babd
+
+COCOAPODS: 1.5.3
