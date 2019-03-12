@@ -10,12 +10,21 @@ import UIKit
 import GoogleMaps
 import Realm
 import RealmSwift
+import CoreData
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+    // MARK: - Properties
+
     var window: UIWindow?
-    static let googleAPIKey = "AIzaSyA7xNHdRKdJDRWsPcl_nfzn30Iu3EblsdE"
+    static let googleAPIKey = "AIzaSyA7xNHdRKdJDRWsPcl_nfzn30Iu3EblsdE" // FIXME: - remove MagicStrings
+
+    // MARK: - Core Data Property
+
+    private let coreDataManager = CoreDataManager(modelName: "PizzaModel")
+
+    // MARK: - Lifecycle
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
@@ -32,6 +41,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         #if DEBUG
         print("RealmBrowser: \(Realm.Configuration.defaultConfiguration.fileURL!)")
         #endif
+
+        // MARK: - Core Data test
+        print(coreDataManager.mainManagedObjectContext) // FIXME: - toRemove
         
         return true
     }
@@ -57,7 +69,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
 
 }
 

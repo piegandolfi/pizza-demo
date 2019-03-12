@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		2C0C04A5A6A6D81257F93B6A /* Pods_PizzaDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EAA713D4266FD480A6FE84F /* Pods_PizzaDemoTests.framework */; };
+		45113D6E2237BF61005A0FA3 /* PizzaModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 45113D6C2237BF61005A0FA3 /* PizzaModel.xcdatamodeld */; };
+		45113D712237BFB7005A0FA3 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45113D702237BFB7005A0FA3 /* CoreDataManager.swift */; };
+		45113D762237C5A3005A0FA3 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45113D752237C5A3005A0FA3 /* Task.swift */; };
 		4E328C6C86E4B96983843B09 /* Pods_PizzaDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C40AB4EC00D50D516E66666 /* Pods_PizzaDemo.framework */; };
 		9A88B63721DCA9DB0002763C /* BusinessLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A88B63621DCA9DB0002763C /* BusinessLogic.swift */; };
 		9A88B63A21DCAA020002763C /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A88B63921DCAA020002763C /* MapViewController.swift */; };
@@ -64,6 +67,9 @@
 
 /* Begin PBXFileReference section */
 		17A5A6EB22B731A9B9B67F0A /* Pods-PizzaDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PizzaDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PizzaDemoTests/Pods-PizzaDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		45113D6D2237BF61005A0FA3 /* PizzaFriendCD.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PizzaFriendCD.xcdatamodel; sourceTree = "<group>"; };
+		45113D702237BFB7005A0FA3 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		45113D752237C5A3005A0FA3 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		61629D90A17909AE9B5F8F05 /* Pods-PizzaDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PizzaDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PizzaDemoTests/Pods-PizzaDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6C40AB4EC00D50D516E66666 /* Pods_PizzaDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PizzaDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E9D6990B647094512A597EF /* Pods-PizzaDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PizzaDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PizzaDemo/Pods-PizzaDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -145,6 +151,23 @@
 				17A5A6EB22B731A9B9B67F0A /* Pods-PizzaDemoTests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		45113D6B2237BB73005A0FA3 /* CD-Model */ = {
+			isa = PBXGroup;
+			children = (
+				45113D6C2237BF61005A0FA3 /* PizzaModel.xcdatamodeld */,
+			);
+			path = "CD-Model";
+			sourceTree = "<group>";
+		};
+		45113D6F2237BFA5005A0FA3 /* CoreData Manager */ = {
+			isa = PBXGroup;
+			children = (
+				45113D702237BFB7005A0FA3 /* CoreDataManager.swift */,
+				45113D752237C5A3005A0FA3 /* Task.swift */,
+			);
+			path = "CoreData Manager";
 			sourceTree = "<group>";
 		};
 		9A257A3021DD530500B7DCAA /* PizzaDemoTests */ = {
@@ -274,20 +297,22 @@
 		9A88B66521DCAB340002763C /* Storage */ = {
 			isa = PBXGroup;
 			children = (
-				9A88B66721DCAB340002763C /* Model */,
+				45113D6F2237BFA5005A0FA3 /* CoreData Manager */,
+				45113D6B2237BB73005A0FA3 /* CD-Model */,
+				9A88B66721DCAB340002763C /* RLM-Model */,
 				9A88B66621DCAB340002763C /* LocalDB.swift */,
 				9A88B66A21DCAB340002763C /* PizzaPlacesProtocol.swift */,
 			);
 			path = Storage;
 			sourceTree = "<group>";
 		};
-		9A88B66721DCAB340002763C /* Model */ = {
+		9A88B66721DCAB340002763C /* RLM-Model */ = {
 			isa = PBXGroup;
 			children = (
 				9A88B66821DCAB340002763C /* PizzaFriendRLM.swift */,
 				9A88B66921DCAB340002763C /* PizzaPlaceRLM.swift */,
 			);
-			path = Model;
+			path = "RLM-Model";
 			sourceTree = "<group>";
 		};
 		9A88B66B21DCAB340002763C /* Components */ = {
@@ -620,12 +645,14 @@
 				9A88B67621DCAB340002763C /* PizzaPlace.swift in Sources */,
 				9A88B67821DCAB340002763C /* PizzaService.swift in Sources */,
 				9A88B64321DCAAA00002763C /* ImageCollectionViewCell.swift in Sources */,
+				45113D6E2237BF61005A0FA3 /* PizzaModel.xcdatamodeld in Sources */,
 				9A88B64F21DCAB1A0002763C /* PizzaFriendViewModel.swift in Sources */,
 				9A88B64E21DCAB1A0002763C /* PizzaPlaceViewModel.swift in Sources */,
 				9A88B67921DCAB340002763C /* PManager+pizzaPlaces.swift in Sources */,
 				9A88B68F21DCAD190002763C /* UIViewController+Extension.swift in Sources */,
 				9A88B66F21DCAB340002763C /* Roundable.swift in Sources */,
 				9A88B67121DCAB340002763C /* PizzaManager.swift in Sources */,
+				45113D712237BFB7005A0FA3 /* CoreDataManager.swift in Sources */,
 				9A88B67321DCAB340002763C /* PizzaPlacesResponse.swift in Sources */,
 				9A88B67C21DCAB340002763C /* LocalDB.swift in Sources */,
 				9A88B68E21DCAD190002763C /* Results+Extension.swift in Sources */,
@@ -637,6 +664,7 @@
 				9A88B67A21DCAB340002763C /* AnimationPresenter.swift in Sources */,
 				9A88B68C21DCAD190002763C /* BusinessLogic+Extension.swift in Sources */,
 				9A93F7E821DCA7A6007F14DA /* AppDelegate.swift in Sources */,
+				45113D762237C5A3005A0FA3 /* Task.swift in Sources */,
 				9A88B64821DCAAE60002763C /* PlaceDetailsInteractor.swift in Sources */,
 				9A88B69121DCAD190002763C /* List+Extension.swift in Sources */,
 				9A88B63C21DCAA0A0002763C /* MapInteractor.swift in Sources */,
@@ -839,7 +867,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ganjalf.PizzaDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = "ganjalf-pizzaDemo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -858,7 +886,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ganjalf.PizzaDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = "ganjalf-pizzaDemo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -896,6 +924,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		45113D6C2237BF61005A0FA3 /* PizzaModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				45113D6D2237BF61005A0FA3 /* PizzaFriendCD.xcdatamodel */,
+			);
+			currentVersion = 45113D6D2237BF61005A0FA3 /* PizzaFriendCD.xcdatamodel */;
+			path = PizzaModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 9A93F7DC21DCA7A6007F14DA /* Project object */;
 }
