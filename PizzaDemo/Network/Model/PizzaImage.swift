@@ -11,6 +11,4 @@ import Foundation
 struct PizzaImage: Codable {
     let id: String
     let url: URL
-    let caption: String
-    let expiration: String // UTC Date formatted into String
 }

@@ -146,7 +146,7 @@ extension PlaceDetailsViewController: UICollectionViewDataSource {
             cell.cellImageView.kf.indicatorType = .activity
             
             DispatchQueue.main.async {
-                cell.cellImageView.kf.setImage(with: URL(string: "https://picsum.photos/200/?random")!)
+                cell.cellImageView.kf.setImage(with: self.pizzaPlaceViewModel.imagesURL[indexPath.item]?.absoluteURL)
             }
         } else {
             guard let placeFriendImage = pizzaPlaceViewModel.friendsURL[indexPath.item] else { return cell }
@@ -163,6 +163,27 @@ extension PlaceDetailsViewController: UICollectionViewDataSource {
     
 }
 
-extension PlaceDetailsViewController: UICollectionViewDelegate {
+extension PlaceDetailsViewController: UICollectionViewDelegateFlowLayout {
+    
+    func collectionView(_ collectionView: UICollectionView,
+                        layout collectionViewLayout: UICollectionViewLayout,
+                        minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        guard collectionView.tag == 777 else {
+            return 10
+        }
+        
+        return 0
+    }
+    
+    func collectionView(_ collectionView: UICollectionView,
+                        layout collectionViewLayout: UICollectionViewLayout,
+                        sizeForItemAt indexPath: IndexPath) -> CGSize {
+        
+        guard collectionView.tag == 777 else {
+            return CGSize(width: 70.0, height: 70.0)
+        }
+        
+        return CGSize(width: photosCollectionView.frame.width, height: photosCollectionView.frame.height)
+    }
     
 }
