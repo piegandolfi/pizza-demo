@@ -64,9 +64,7 @@
                 "latitude": 52.366105,
                 "images": [{
                     "id": "cea251cc-47dc-435c-b39d-7e4231a53e46",
-                    "url": "https://media-cdn.tripadvisor.com/media/photo-s/05/43/dd/34/eatmosfera-ristorante.jpg",
-                    "caption": "<a href=\"https://maps.google.com/maps/contrib/111078264694581233407/photos\">Go 360</a>",
-                    "expiration": "2018-11-23T00:20:44Z"
+                    "url": "https://media-cdn.tripadvisor.com/media/photo-s/05/43/dd/34/eatmosfera-ristorante.jpg"
                 }],
                 "friendIds": ["4", "6", "7"]
             },
@@ -90,9 +88,7 @@
                 "latitude": 52.4036117,
                 "images": [{
                     "id": "10e258d7-74f1-420b-96b1-697a100c7d9c",
-                    "url": "https://www.culy.nl/wp-content/uploads/2014/05/Kebec-restaurant.jpg",
-                    "caption": "<a href=\"https://maps.google.com/maps/contrib/100413606320840523537/photos\">Kebec</a>",
-                    "expiration": "2018-11-23T00:20:44Z"
+                    "url": "https://www.culy.nl/wp-content/uploads/2014/05/Kebec-restaurant.jpg"
                 }],
                 "friendIds": ["10", "9", "8", "7", "6"]
             },
@@ -115,9 +111,7 @@
                 "latitude": 52.37704009999999,
                 "images": [{
                     "id": "35d8a673-a2df-47c6-b36d-34177e8614d5",
-                    "url": "https://media-cdn.tripadvisor.com/media/photo-s/03/1b/65/41/la-perla.jpg",
-                    "caption": "<a href=\"https://maps.google.com/maps/contrib/109205427360056198512/photos\">Behzad Ghaffarian</a>",
-                    "expiration": "2018-11-23T00:20:44Z"
+                    "url": "https://media-cdn.tripadvisor.com/media/photo-s/03/1b/65/41/la-perla.jpg"
                 }],
                 "friendIds": ["10", "2", "5", "8", "7"]
             },
@@ -141,9 +135,7 @@
                 "latitude": 52.376075,
                 "images": [{
                     "id": "f084c144-d11a-4668-9102-6d37b7b1acef",
-                    "url": "https://u.tfstatic.com/restaurant_photos/297/220297/169/612/yamyam-trattoria-pizzeria-restaurantzaal-718a1.jpg",
-                    "caption": "<a href=\"https://maps.google.com/maps/contrib/102583669577607503866/photos\">Emanuel Cifuentes</a>",
-                    "expiration": "2018-11-23T00:20:44Z"
+                    "url": "https://u.tfstatic.com/restaurant_photos/297/220297/169/612/yamyam-trattoria-pizzeria-restaurantzaal-718a1.jpg"
                 }],
 
                 "friendIds": ["1", "2", "8", "6", "5"]
