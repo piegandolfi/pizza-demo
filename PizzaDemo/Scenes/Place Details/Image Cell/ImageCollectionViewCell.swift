@@ -16,6 +16,8 @@ class ImageCollectionViewCell: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        cellImageView.contentMode = .scaleAspectFit
+        backgroundColor = UIColor.orange.withAlphaComponent(0.7)
     }
 
 }

@@ -43,7 +43,7 @@ DEPENDENCIES:
   - RxSwift
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - Alamofire
     - GoogleMaps
     - GooglePlaces
@@ -75,4 +75,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 8b22024644f54109cb885bd2f30f995d26e3babd
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.6.0
