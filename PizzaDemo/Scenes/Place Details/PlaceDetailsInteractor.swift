@@ -26,7 +26,7 @@ class PlaceDetailsInteractor: BusinessLogic, PlaceDetailsBusinessLogic {
         return Observable.create({ [weak self] (observer) -> Disposable in
             guard let strongSelf = self else { return Disposables.create() }
             let amsterdamCenter: CLLocation = CLLocation(latitude: 52.3679636, longitude: 4.8335219)
-            let pizzaPlace = PizzaPlaceViewModel(pizzaPlace: strongSelf.localDB.getPizzaPlaceBy(id: id), location: amsterdamCenter)
+            let pizzaPlace = PizzaPlaceViewModel(pizzaPlace: strongSelf.localDB.getPizzaPlaceBy(id: id)!, location: amsterdamCenter)
 
             observer.onNext(pizzaPlace)
             observer.onCompleted()

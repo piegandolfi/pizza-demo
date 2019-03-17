@@ -19,13 +19,23 @@ class LocalDB {
 }
 
 extension LocalDB: PizzaPlacesProtocol {
-    
-    func getPizzaPlaces() -> [PizzaPlaceRLM] {
-        return realm!.objects(PizzaPlaceRLM.self).toArray()
+    func getPizzaPlaces() -> [PizzaPlaceModel] {
+        var pizzaPlaces: [PizzaPlaceModel] = []
+        
+        if let realm = realm {
+            pizzaPlaces = realm.objects(PizzaPlaceRLM.self).toArray().map({ $0.toModel() })
+        }
+        
+        return pizzaPlaces
     }
-
-    func getPizzaPlaceBy(id: String) -> PizzaPlaceRLM {
-        return realm!.objects(PizzaPlaceRLM.self).filter("id = '\(id)'").toArray().first!
+    
+    func getPizzaPlaceBy(id: String) -> PizzaPlaceModel? {
+        
+        if let realm = realm {
+            return realm.objects(PizzaPlaceRLM.self).filter("id = '\(id)'").toArray().first!.toModel()
+        }
+        
+        return nil
     }
 
     func setPizzaPlaces(_ value: [PizzaPlace]) {
@@ -64,13 +74,19 @@ extension LocalDB: PizzaPlacesProtocol {
     }
     
     func setPizzaPlaceFriends(_ id: String, friendsIds: [String]) {
-        let placeRLM = getPizzaPlaceBy(id: id)
-        
-        try? realm!.write ({
-            placeRLM.friends.append(objectsIn: self.getPizzaFriendsBy(ids: friendsIds))
-            // If update = false, adds the object
-            realm?.add(placeRLM, update: true)
-        })
+        if let realm = realm,
+           var place = getPizzaPlaceBy(id: id) {
+            
+            place.friends = getPizzaFriendsBy(ids: friendsIds)
+            
+            let placeRLM: PizzaPlaceRLM = place.toRealm()
+            
+            try? realm.write ({
+                
+                // If update = false, adds the object
+                realm.add(placeRLM, update: true)
+            })
+        }
     }
 
     func clearPizzaPlaces() {
@@ -83,15 +99,27 @@ extension LocalDB: PizzaPlacesProtocol {
 }
 
 extension LocalDB: PizzaFriendsProtocol {
-    func getPizzaFriends() -> [PizzaFriendRLM] {
-        return realm!.objects(PizzaFriendRLM.self).toArray()
+    func getPizzaFriends() -> [PizzaFriendModel] {
+        var pizzaFriends: [PizzaFriendModel] = []
+        
+        if let realm = realm {
+            pizzaFriends = realm.objects(PizzaFriendRLM.self).toArray().map({ $0.toModel() })
+        }
+        
+        return pizzaFriends
     }
     
-    func getPizzaFriendsBy(ids: [String]) -> [PizzaFriendRLM] {
-        var pizzaFriends: [PizzaFriendRLM] = []
-        ids.forEach { (id) in
-            pizzaFriends.append(realm!.objects(PizzaFriendRLM.self).filter("id = '\(id)'").toArray().first!)
+    func getPizzaFriendsBy(ids: [String]) -> [PizzaFriendModel] {
+        var pizzaFriends: [PizzaFriendModel] = []
+        
+        if let realm = realm {
+            ids.forEach { (id) in
+                pizzaFriends.append(
+                    realm.objects(PizzaFriendRLM.self).filter("id = '\(id)'").toArray().first!.toModel()
+                )
+            }
         }
+        
         return pizzaFriends
     }
     

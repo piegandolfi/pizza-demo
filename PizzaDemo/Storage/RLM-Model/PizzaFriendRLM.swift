@@ -19,3 +19,12 @@ class PizzaFriendRLM: Object {
         return "id"
     }
 }
+
+extension PizzaFriendRLM {
+    func toModel() -> PizzaFriendModel {
+        return PizzaFriendModel(
+            id: self.id,
+            name: self.name,
+            avatarURL: self.avatarURL)
+    }
+}

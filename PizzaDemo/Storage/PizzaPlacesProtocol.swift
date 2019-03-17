@@ -11,15 +11,9 @@ import Realm
 import RealmSwift
 
 protocol PizzaPlacesProtocol {
-    func getPizzaPlaces() -> [PizzaPlaceRLM]
-    func getPizzaPlaceBy(id: String) -> PizzaPlaceRLM
+    func getPizzaPlaces() -> [PizzaPlaceModel]
+    func getPizzaPlaceBy(id: String) -> PizzaPlaceModel?
     func setPizzaPlaces(_ value: [PizzaPlace])
     func setPizzaPlaceFriends(_ id: String, friendsIds: [String])
     func clearPizzaPlaces()
-}
-
-protocol PizzaFriendsProtocol {
-    func getPizzaFriends() -> [PizzaFriendRLM]
-    func getPizzaFriendsBy(ids: [String]) -> [PizzaFriendRLM]
-    func setPizzaFriends(_ value: [PizzaFriend])
 }

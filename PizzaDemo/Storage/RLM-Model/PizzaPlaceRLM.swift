@@ -28,8 +28,29 @@ class PizzaPlaceRLM: Object {
     var openingHours = List<String>()
     var images = List<String>()
 
-
     override static func primaryKey() -> String? {
         return "id"
+    }
+}
+
+extension PizzaPlaceRLM {
+    func toModel() -> PizzaPlaceModel {
+        return PizzaPlaceModel(
+            id: self.id,
+            name: self.name,
+            phone: self.phone,
+            website: self.website,
+            formattedAddress: self.formattedAddress,
+            city: self.city,
+            latitude: self.latitude,
+            longitude: self.longitude,
+            rating: self.rating,
+            distanceFromCenter: self.distanceFromCenter,
+            placeDescription: self.placeDescription,
+            friendIds: self.friendIds.toArray(),
+            friends: self.friends.toArray().map({ $0.toModel() }),
+            openingHours: self.openingHours.toArray(),
+            images: self.images.toArray()
+        )
     }
 }

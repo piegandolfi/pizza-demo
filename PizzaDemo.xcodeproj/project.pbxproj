@@ -53,6 +53,9 @@
 		9A93F7EF21DCA7A7007F14DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A93F7EE21DCA7A7007F14DA /* Assets.xcassets */; };
 		9A93F7F221DCA7A7007F14DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A93F7F021DCA7A7007F14DA /* LaunchScreen.storyboard */; };
 		9AA6FA6721E08CA7006C5599 /* MapViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA6FA6621E08CA7006C5599 /* MapViewControllerTests.swift */; };
+		9AE889D6223D0378001DC604 /* PizzaPlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE889D5223D0378001DC604 /* PizzaPlaceModel.swift */; };
+		9AE889D8223D0380001DC604 /* PizzaFriendModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE889D7223D0380001DC604 /* PizzaFriendModel.swift */; };
+		9AE889DA223D03D7001DC604 /* PizzaFriendsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE889D9223D03D7001DC604 /* PizzaFriendsProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,6 +122,9 @@
 		9A93F7F121DCA7A7007F14DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9A93F7F321DCA7A7007F14DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9AA6FA6621E08CA7006C5599 /* MapViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewControllerTests.swift; sourceTree = "<group>"; };
+		9AE889D5223D0378001DC604 /* PizzaPlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaPlaceModel.swift; sourceTree = "<group>"; };
+		9AE889D7223D0380001DC604 /* PizzaFriendModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaFriendModel.swift; sourceTree = "<group>"; };
+		9AE889D9223D03D7001DC604 /* PizzaFriendsProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaFriendsProtocol.swift; sourceTree = "<group>"; };
 		CB9A7C24423A6855A49A4129 /* Pods-PizzaDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PizzaDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-PizzaDemo/Pods-PizzaDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -164,6 +170,7 @@
 		45113D6F2237BFA5005A0FA3 /* CoreData Manager */ = {
 			isa = PBXGroup;
 			children = (
+				45113D6B2237BB73005A0FA3 /* CD-Model */,
 				45113D702237BFB7005A0FA3 /* CoreDataManager.swift */,
 				45113D752237C5A3005A0FA3 /* Task.swift */,
 			);
@@ -255,9 +262,9 @@
 			isa = PBXGroup;
 			children = (
 				9A88B65821DCAB340002763C /* Model */,
-				9A88B65621DCAB340002763C /* PManager+friends.swift */,
-				9A88B65721DCAB340002763C /* PizzaManager.swift */,
 				9A88B65F21DCAB340002763C /* PizzaService.swift */,
+				9A88B65721DCAB340002763C /* PizzaManager.swift */,
+				9A88B65621DCAB340002763C /* PManager+friends.swift */,
 				9A88B66021DCAB340002763C /* PManager+pizzaPlaces.swift */,
 			);
 			path = Network;
@@ -296,11 +303,12 @@
 		9A88B66521DCAB340002763C /* Storage */ = {
 			isa = PBXGroup;
 			children = (
-				45113D6F2237BFA5005A0FA3 /* CoreData Manager */,
-				45113D6B2237BB73005A0FA3 /* CD-Model */,
-				9A88B66721DCAB340002763C /* RLM-Model */,
 				9A88B66621DCAB340002763C /* LocalDB.swift */,
 				9A88B66A21DCAB340002763C /* PizzaPlacesProtocol.swift */,
+				9AE889D9223D03D7001DC604 /* PizzaFriendsProtocol.swift */,
+				9AE889D4223D036A001DC604 /* Model */,
+				45113D6F2237BFA5005A0FA3 /* CoreData Manager */,
+				9A88B66721DCAB340002763C /* RLM-Model */,
 			);
 			path = Storage;
 			sourceTree = "<group>";
@@ -393,6 +401,15 @@
 			path = Map;
 			sourceTree = "<group>";
 		};
+		9AE889D4223D036A001DC604 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9AE889D5223D0378001DC604 /* PizzaPlaceModel.swift */,
+				9AE889D7223D0380001DC604 /* PizzaFriendModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		DE91967EFBC48226A4B11429 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -432,8 +449,8 @@
 				9A93F7E021DCA7A6007F14DA /* Sources */,
 				9A93F7E121DCA7A6007F14DA /* Frameworks */,
 				9A93F7E221DCA7A6007F14DA /* Resources */,
-				3DA8D065ADE3EA2785AAEB1A /* [CP] Embed Pods Frameworks */,
-				518DFA5B249FC3B963BC4BA4 /* [CP] Copy Pods Resources */,
+				7CF5EA427C01A7339028017C /* [CP] Embed Pods Frameworks */,
+				979D15FD356F0439C3A29BE9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -527,7 +544,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		3DA8D065ADE3EA2785AAEB1A /* [CP] Embed Pods Frameworks */ = {
+		7CF5EA427C01A7339028017C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -569,7 +586,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PizzaDemo/Pods-PizzaDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		518DFA5B249FC3B963BC4BA4 /* [CP] Copy Pods Resources */ = {
+		979D15FD356F0439C3A29BE9 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -642,6 +659,7 @@
 				9A88B64721DCAAE60002763C /* PlaceDetailsViewController.swift in Sources */,
 				9A88B63721DCA9DB0002763C /* BusinessLogic.swift in Sources */,
 				9A88B68021DCAB340002763C /* StarView.swift in Sources */,
+				9AE889DA223D03D7001DC604 /* PizzaFriendsProtocol.swift in Sources */,
 				9A88B67621DCAB340002763C /* PizzaPlace.swift in Sources */,
 				9A88B67821DCAB340002763C /* PizzaService.swift in Sources */,
 				9A88B64321DCAAA00002763C /* ImageCollectionViewCell.swift in Sources */,
@@ -666,6 +684,8 @@
 				9A93F7E821DCA7A6007F14DA /* AppDelegate.swift in Sources */,
 				45113D762237C5A3005A0FA3 /* Task.swift in Sources */,
 				9A88B64821DCAAE60002763C /* PlaceDetailsInteractor.swift in Sources */,
+				9AE889D6223D0378001DC604 /* PizzaPlaceModel.swift in Sources */,
+				9AE889D8223D0380001DC604 /* PizzaFriendModel.swift in Sources */,
 				9A88B69121DCAD190002763C /* List+Extension.swift in Sources */,
 				9A88B63C21DCAA0A0002763C /* MapInteractor.swift in Sources */,
 				9A88B67B21DCAB340002763C /* AlertPresenter.swift in Sources */,

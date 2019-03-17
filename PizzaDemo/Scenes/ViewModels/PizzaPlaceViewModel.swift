@@ -19,7 +19,7 @@ struct PizzaPlaceViewModel {
     let friendsURL: [URL?]
     let rating: String
 
-    init(pizzaPlace: PizzaPlaceRLM, location: CLLocation? = nil) {
+    init(pizzaPlace: PizzaPlaceModel, location: CLLocation? = nil) {
         self.id = pizzaPlace.id
         self.name = pizzaPlace.name
         self.description = pizzaPlace.placeDescription

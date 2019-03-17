@@ -29,13 +29,13 @@ class MapInteractor: BusinessLogic, MapBusinessLogic {
     
     func requestPizzaPlaces() -> Observable<[PizzaPlaceViewModel]> {
         return networkProvider.getAllPizzaPlaces()
-            .map { [unowned self] (pizzaPlaces) -> [PizzaPlaceRLM] in
+            .map { [unowned self] (pizzaPlaces) -> [PizzaPlaceModel] in
                 self.localDB.setPizzaPlaces(pizzaPlaces)
                 return self.localDB.getPizzaPlaces()
             }
             .map { (pizzaPlacesRLM) -> [PizzaPlaceViewModel] in
                 pizzaPlacesRLM.forEach({ (pizzaPlace) in
-                    self.localDB.setPizzaPlaceFriends(pizzaPlace.id, friendsIds: pizzaPlace.friendIds.toArray())
+                    self.localDB.setPizzaPlaceFriends(pizzaPlace.id, friendsIds: pizzaPlace.friendIds)
                 })
                 
                 return pizzaPlacesRLM.map({ PizzaPlaceViewModel(pizzaPlace: $0) })
