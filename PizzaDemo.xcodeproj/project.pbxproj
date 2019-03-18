@@ -177,6 +177,13 @@
 			path = "CoreData Manager";
 			sourceTree = "<group>";
 		};
+		45E0E17E223F8E4500C2C737 /* Book Calendar */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Book Calendar";
+			sourceTree = "<group>";
+		};
 		9A257A3021DD530500B7DCAA /* PizzaDemoTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -193,6 +200,7 @@
 				9A88B64B21DCAB1A0002763C /* ViewModels */,
 				9A88B63821DCA9EB0002763C /* Map */,
 				9A88B63F21DCAA7F0002763C /* Place Details */,
+				45E0E17E223F8E4500C2C737 /* Book Calendar */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
