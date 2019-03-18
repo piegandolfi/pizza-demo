@@ -11,6 +11,8 @@
 		45113D6E2237BF61005A0FA3 /* PizzaModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 45113D6C2237BF61005A0FA3 /* PizzaModel.xcdatamodeld */; };
 		45113D712237BFB7005A0FA3 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45113D702237BFB7005A0FA3 /* CoreDataManager.swift */; };
 		45113D762237C5A3005A0FA3 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45113D752237C5A3005A0FA3 /* Task.swift */; };
+		45E0E183223FC59400C2C737 /* MonthsComponentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E0E181223FC59400C2C737 /* MonthsComponentViewController.swift */; };
+		45E0E184223FC59400C2C737 /* MonthsComponentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45E0E182223FC59400C2C737 /* MonthsComponentViewController.xib */; };
 		4E328C6C86E4B96983843B09 /* Pods_PizzaDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C40AB4EC00D50D516E66666 /* Pods_PizzaDemo.framework */; };
 		9A88B63721DCA9DB0002763C /* BusinessLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A88B63621DCA9DB0002763C /* BusinessLogic.swift */; };
 		9A88B63A21DCAA020002763C /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A88B63921DCAA020002763C /* MapViewController.swift */; };
@@ -73,6 +75,8 @@
 		45113D6D2237BF61005A0FA3 /* PizzaFriendCD.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PizzaFriendCD.xcdatamodel; sourceTree = "<group>"; };
 		45113D702237BFB7005A0FA3 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		45113D752237C5A3005A0FA3 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		45E0E181223FC59400C2C737 /* MonthsComponentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthsComponentViewController.swift; sourceTree = "<group>"; };
+		45E0E182223FC59400C2C737 /* MonthsComponentViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MonthsComponentViewController.xib; sourceTree = "<group>"; };
 		61629D90A17909AE9B5F8F05 /* Pods-PizzaDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PizzaDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PizzaDemoTests/Pods-PizzaDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6C40AB4EC00D50D516E66666 /* Pods_PizzaDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PizzaDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E9D6990B647094512A597EF /* Pods-PizzaDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PizzaDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PizzaDemo/Pods-PizzaDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -182,6 +186,15 @@
 			children = (
 			);
 			path = "Book Calendar";
+			sourceTree = "<group>";
+		};
+		45E0E185223FC5C000C2C737 /* Months Component */ = {
+			isa = PBXGroup;
+			children = (
+				45E0E181223FC59400C2C737 /* MonthsComponentViewController.swift */,
+				45E0E182223FC59400C2C737 /* MonthsComponentViewController.xib */,
+			);
+			path = "Months Component";
 			sourceTree = "<group>";
 		};
 		9A257A3021DD530500B7DCAA /* PizzaDemoTests */ = {
@@ -333,6 +346,7 @@
 		9A88B66B21DCAB340002763C /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				45E0E185223FC5C000C2C737 /* Months Component */,
 				9A88B66C21DCAB340002763C /* StarView.swift */,
 			);
 			path = Components;
@@ -520,6 +534,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45E0E184223FC59400C2C737 /* MonthsComponentViewController.xib in Resources */,
 				9A93F7F221DCA7A7007F14DA /* LaunchScreen.storyboard in Resources */,
 				9A88B64421DCAAA00002763C /* ImageCell.xib in Resources */,
 				9A93F7EF21DCA7A7007F14DA /* Assets.xcassets in Resources */,
@@ -677,6 +692,7 @@
 				9A88B67921DCAB340002763C /* PManager+pizzaPlaces.swift in Sources */,
 				9A88B68F21DCAD190002763C /* UIViewController+Extension.swift in Sources */,
 				9A88B66F21DCAB340002763C /* Roundable.swift in Sources */,
+				45E0E183223FC59400C2C737 /* MonthsComponentViewController.swift in Sources */,
 				9A88B67121DCAB340002763C /* PizzaManager.swift in Sources */,
 				45113D712237BFB7005A0FA3 /* CoreDataManager.swift in Sources */,
 				9A88B67321DCAB340002763C /* PizzaPlacesResponse.swift in Sources */,

@@ -262,13 +262,49 @@
                     <view key="view" contentMode="scaleToFill" id="DLf-RL-NGC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w2I-0A-Q6g">
+                                <rect key="frame" x="0.0" y="88" width="375" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="508-YD-TBb">
+                                <rect key="frame" x="0.0" y="698" width="375" height="80"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DTb-DL-Kof">
+                                        <rect key="frame" x="84" y="15" width="207" height="50"/>
+                                        <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Book">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="DTb-DL-Kof" firstAttribute="centerY" secondItem="508-YD-TBb" secondAttribute="centerY" id="YGb-mV-b0t"/>
+                                    <constraint firstAttribute="trailing" secondItem="DTb-DL-Kof" secondAttribute="trailing" constant="84" id="fiV-QN-uFf"/>
+                                    <constraint firstItem="DTb-DL-Kof" firstAttribute="leading" secondItem="508-YD-TBb" secondAttribute="leading" constant="84" id="frk-YG-35w"/>
+                                    <constraint firstItem="DTb-DL-Kof" firstAttribute="height" secondItem="508-YD-TBb" secondAttribute="height" multiplier="50:80" id="pXE-y7-79g"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="508-YD-TBb" firstAttribute="height" secondItem="DLf-RL-NGC" secondAttribute="height" multiplier="80:812" id="6fX-Lt-NrT"/>
+                            <constraint firstItem="Tbz-ww-1W5" firstAttribute="bottom" secondItem="508-YD-TBb" secondAttribute="bottom" id="765-iV-G0r"/>
+                            <constraint firstItem="w2I-0A-Q6g" firstAttribute="height" secondItem="DLf-RL-NGC" secondAttribute="height" multiplier="60:812" id="9qv-VJ-gPY"/>
+                            <constraint firstItem="Tbz-ww-1W5" firstAttribute="trailing" secondItem="508-YD-TBb" secondAttribute="trailing" id="Eag-Mg-Mzy"/>
+                            <constraint firstItem="Tbz-ww-1W5" firstAttribute="trailing" secondItem="w2I-0A-Q6g" secondAttribute="trailing" id="SHV-3q-fze"/>
+                            <constraint firstItem="508-YD-TBb" firstAttribute="leading" secondItem="Tbz-ww-1W5" secondAttribute="leading" id="XC1-uB-xml"/>
+                            <constraint firstItem="w2I-0A-Q6g" firstAttribute="top" secondItem="Tbz-ww-1W5" secondAttribute="top" id="XTM-LC-ula"/>
+                            <constraint firstItem="w2I-0A-Q6g" firstAttribute="leading" secondItem="Tbz-ww-1W5" secondAttribute="leading" id="m17-1V-t49"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Tbz-ww-1W5"/>
                     </view>
+                    <navigationItem key="navigationItem" id="h8U-1J-xib"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aAr-PY-M0D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1705" y="44"/>
+            <point key="canvasLocation" x="2647.1999999999998" y="43.596059113300491"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Mqb-k7-HV9">
@@ -290,6 +326,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EtE-e5-1cc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="101.59999999999999" y="-663.41829085457277"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Omh-GL-hTd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gE7-rt-qJL" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="CBi-HG-Tgq">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="GzD-yp-e0p" kind="relationship" relationship="rootViewController" id="fRS-1R-qIq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P9n-bf-Dv2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1704.8" y="43.596059113300491"/>
         </scene>
     </scenes>
     <resources>
