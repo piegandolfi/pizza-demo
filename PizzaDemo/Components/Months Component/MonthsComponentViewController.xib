@@ -23,11 +23,12 @@
                 <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DjY-pZ-J4l">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
                     <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SIT-04-kzv">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SIT-04-kzv">
                             <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="60" id="KTB-uB-hpz"/>
                             </constraints>
+                            <state key="normal" image="backButton-monthsComponent"/>
                         </button>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4CB-53-NCN">
                             <rect key="frame" x="60" y="0.0" width="255" height="60"/>
@@ -48,11 +49,12 @@
                                 <constraint firstAttribute="bottom" secondItem="w9D-mT-97c" secondAttribute="bottom" id="ujK-38-wv1"/>
                             </constraints>
                         </view>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iQA-zl-bmM">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iQA-zl-bmM">
                             <rect key="frame" x="315" y="0.0" width="60" height="60"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="60" id="bOP-JE-Mq3"/>
                             </constraints>
+                            <state key="normal" image="forwardButton-monthsComponent"/>
                         </button>
                     </subviews>
                     <constraints>
@@ -79,4 +81,8 @@
             <point key="canvasLocation" x="138.40000000000001" y="-100.74962518740631"/>
         </view>
     </objects>
+    <resources>
+        <image name="backButton-monthsComponent" width="25" height="25"/>
+        <image name="forwardButton-monthsComponent" width="25" height="25"/>
+    </resources>
 </document>
